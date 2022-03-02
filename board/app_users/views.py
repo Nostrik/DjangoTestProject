@@ -2,11 +2,12 @@ from re import template
 import time
 import datetime
 from multiprocessing import AuthenticationError
-from django.shortcuts import render
-from app_users.forms import AuthForm
+from django.shortcuts import redirect, render
+from app_users.forms import AuthForm, ExtendedRegisterForm
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.views import LoginView, LogoutView
+from django.contrib.auth.forms import UserCreationForm
 
 
 def login_view(request):
@@ -49,3 +50,33 @@ class AnotherLogoutView(LogoutView):
 def logout_view(request):
 	logout(request)
 	return HttpResponse('Вы успешно вышли из под своей своей учетной записи')
+
+
+def register_view(request):
+	if request.method == 'POST':
+		form = UserCreationForm(request.POST)
+		if form.is_valid():
+			form.save()
+			username = form.cleaned_data.get('username')
+			raw_password = form.cleaned_data.get('password1')
+			user = authenticate(username=username, password=raw_password)
+			login(request, user)
+			return redirect('/')
+	else:
+		form = UserCreationForm()
+	return render(request, 'users/register.html', {'form': form})
+	
+
+def another_register_view(request):
+	if request.method == 'POST':
+		form = ExtendedRegisterForm(request.POST)
+		if form.is_valid():
+			form.save()
+			username = form.cleaned_data.get('username')
+			raw_password = form.cleaned_data.get('password1')
+			user = authenticate(username=username, password=raw_password)
+			login(request, user)
+			return redirect('/')
+	else:
+		form = ExtendedRegisterForm()
+	return render(request, 'users/register.html', {'form': form})
