@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная Страница</title>
+</head>
+<body>
+{% if request.user.is_authenticated %}
+    <h3>ДОбро пожаловать на сайт, {{ request.user.username }}</h3>
+{% else %}
+    <h3>Вы не авторизованы на нашем сайте.</h3>
+    <a href="{% url 'login' %}">Войти</a>
+{% endif %}
+<h2>Я главная Страница!</h2>
+</body>
+</html>
