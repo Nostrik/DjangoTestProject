@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app_library',
     'app_users',
+    'app_employment'
 ]
 
 MIDDLEWARE = [
@@ -125,4 +126,4 @@ LOGIN_REDIRECT_URL = '/'
 
 # SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
-SESSION_COOKIE_AGE = 60
+# SESSION_COOKIE_AGE = 60
