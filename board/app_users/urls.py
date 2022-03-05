@@ -1,6 +1,7 @@
 from unicodedata import name
 from django.urls import path
-from app_users.views import login_view,logout_view,  AnotherLoginView, AnotherLogoutView, register_view, another_register_view
+from app_users.views import login_view, logout_view,  AnotherLoginView, AnotherLogoutView, register_view, \
+							another_register_view
 from django.urls import include
 
 urlpatterns = [
