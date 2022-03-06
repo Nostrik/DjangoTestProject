@@ -21,7 +21,7 @@ def login_view(request):
 			user = authenticate(username=username, password=password)
 			if user:
 				if user.is_active:
-					if user.is_superuser == False:
+					if user.is_superuser == True:
 						login(request, user)
 						return HttpResponse('Вы успешно вошли в систему')
 					else:

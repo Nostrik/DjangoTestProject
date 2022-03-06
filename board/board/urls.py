@@ -19,6 +19,7 @@ from board.views import MainView
 
 urlpatterns = [
     path('', MainView.as_view(), name='main'),
+    path('users/', include('app_users.urls')),
+    path('employment/', include('app_employment.urls')),
     path('admin/', admin.site.urls),
-    path('users/', include('app_users.urls'))
 ]
