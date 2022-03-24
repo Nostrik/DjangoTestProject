@@ -20,5 +20,6 @@ from board.views import MainView
 urlpatterns = [
     path('', MainView.as_view(), name='main'),
     path('admin/', admin.site.urls),
-    path('users/', include('app_users.urls'))
+    path('users/', include('app_users.urls')),
+    path('files/', include('app_media.urls'))
 ]
