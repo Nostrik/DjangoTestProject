@@ -1,10 +1,12 @@
 from django.shortcuts import render
+# from board.app_employment.models import Vacancy
+# from app_employment.models import Vacancy
+from .models import Vacancy
+from django.core.exceptions import PermissionDenied
+from django.contrib.auth.decorators import permission_required
 
-from board.app_employment.models import Vacancy
-from app_employment.models import Vacancy
 
-
+@permission_required('app_employment.view_vacancy')
 def vacancy_list(request):
-    if request.user.has_perm():
-        vacancies = Vacancy.objects.all()
-        return render(request, 'employment/vacancy_list.html', {'vacancy_list': vacancies})
+    vacancies = Vacancy.objects.all()
+    return render(request, 'vacancy_list.html', {'vacancy_list': vacancies})
