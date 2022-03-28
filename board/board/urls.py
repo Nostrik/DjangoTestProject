@@ -22,9 +22,6 @@ urlpatterns = [
     path('users/', include('app_users.urls')),
     path('employment/', include('app_employment.urls')),
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
-    path('users/', include('app_users.urls')),
-    path('files/', include('app_media.urls'))
-=======
->>>>>>> 98abe0da92be07323414e5eac2f1e6dba0733645
+    path('urls/', include('app_media.urls')),
+    path('goods/', include('app_goods.urls'))
 ]

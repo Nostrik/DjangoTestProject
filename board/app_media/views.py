@@ -23,11 +23,16 @@ def upload_valid_file(request):
     if request.method == 'POST':
         upload_file_form = UploadValidFile(request.POST, request.FILES)
         if upload_file_form.is_valid():
-            if upload_file_form.is_valid_form():
-                file = request.FILES['file']
-                return HttpResponse(content=(file.name, f' {file.size} byte'), status=200)
-            else:
-                return HttpResponseBadRequest()
+            a = upload_file_form
+            file = request.FILES['file']
+            for line in file:
+                b = line.decode('utf-8')
+                if b.startswith('word') or b.endswith('word'):
+                    print('forbidden word!')
+                    return HttpResponse(f'Файл не прошел проверку.')
+            return HttpResponse(content=(file.name, f' {file.size} byte'), status=200)
+        else:
+            return HttpResponseBadRequest()
     else:
         upload_file_form = UploadValidFile()
 
