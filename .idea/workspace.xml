@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de8a88bc-8be9-477f-b0e2-a65faa0724a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/board/app_goods/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/board/app_goods/templates/items_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/board/app_goods/templates/upload_price_file.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/board/app_goods/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PyDjango.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PyDjango.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board/app_goods/templates/file_form_upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board/app_goods/templates/new_items_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/app_media/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_media/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/app_media/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_media/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/app_goods/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_goods/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/app_goods/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_goods/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/app_goods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_goods/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/app_goods/templates/upload_price_file.html" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_goods/templates/upload_price_file.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/app_goods/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_goods/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/app_goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_goods/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/app_media/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_media/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/board/board/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/board/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/board/board/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/board/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/board/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/board/db.sqlite3" afterDir="false" />
@@ -26,13 +27,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="25xBKS1WWJFiOQBzrkmPtrXwfyu" />
   <component name="ProjectViewState">
@@ -90,16 +99,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/board/app_media/views.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="upload_file_form" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

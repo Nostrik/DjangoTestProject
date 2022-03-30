@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Новый список товаров</title>
+</head>
+<body>
+    {% if items_list %}
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>Название</td>
+                <td>Артикул</td>
+                <td>Цена</td>
+            </tr>
+            {% for item in items_list %}
+                <tr>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.code }}</td>
+                    <td>{{ item.price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</body>
+</html>
