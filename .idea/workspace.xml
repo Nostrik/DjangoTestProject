@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de8a88bc-8be9-477f-b0e2-a65faa0724a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/board/app_goods/templates/file_form_upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/board/app_goods/templates/new_items_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/app_goods/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_goods/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/app_goods/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_goods/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/app_goods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_goods/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/app_goods/templates/upload_price_file.html" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_goods/templates/upload_price_file.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/app_goods/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_goods/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/app_goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_goods/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/app_media/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/app_media/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/board/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/board/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/board/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/board/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/board/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
